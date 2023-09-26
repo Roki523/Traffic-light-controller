@@ -198,4 +198,47 @@ design flip flop, latches and further counters to
 complete our project. Our project also requires some
 combinational circuitry to provide better timing logics
 to design we use bottom up approach to construct the
-project. We design schematic on Xilinx tool.
+project. We design schematic on Xilinx tool.(LOGIC OF TIMING BLOCK)
+
+![IMG_20230926_233238](https://github.com/Roki523/Traffic-light-controller/assets/109354329/c2bc9b01-4215-47c9-94b8-e79341d520f2)
+
+Here in the figure.2 shows basic working of each lane traffic lights. It shows the switching mechanism of lights during the rush time as it for low density time the green will automatically changes to 8sec provide the less time for lane as it not has any huge traffic. As it has specified for each lane and timing between each lane is set very precisely and accurately.
+
+3.4 STATE TRANSITION TABLE
+
+(STATE TRANSITION)
+
+
+![IMG_20230926_233751](https://github.com/Roki523/Traffic-light-controller/assets/109354329/94dd8821-9acc-472f-b7fd-0c8d1168613f)
+
+IV.IMPLEMENTATION OF SEVEN SEGMENT LED
+
+In our project we have focused to display the Timer on the seven segment for which our output signals are switching. As our proposed system is generating binary outputs at the end so we require a seven bit decoder to generate specific bits signal to generate the desired output which is to be applied as an input to the seven segment. So, we have a maximum 30 sec timer to display it we require two seven segments LEDs to represent it. Here is the diagram of seven segment given below(SEVEN SEGMENT LED)
+
+
+![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/32ebbed8-da75-4adb-b6e0-c2b6e9e3bbef)
+
+Here we can see seven segment denoted as A ,B ,C, D, E, F and G each segment is set of LED’s and anode of these are set to be High always to make a particular segment active we have to make its cathode to be low. For example we want to display 3 number so we have to make cathode of the F and E to be HIGH and kept others at low voltage for displaying the number. We have denoted each segment cathode as CA, CB, CC, CD, CE, CF and CG respectively. The detailed description is given in the following
+
+![IMG_20230926_234726](https://github.com/Roki523/Traffic-light-controller/assets/109354329/846b677d-a5c1-4f5f-9c67-5e56c4841afb)
+
+In the above table the L indicate Low and H indicates The High values.
+Suitable connection of our Traffic light controller to seven segment LED’s are given below(INTERFACING OF SEVEN SEGMENT LED)
+
+![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/fc108e74-af64-4b8c-8e42-0cfc083a3dd5)
+
+This diagram shows the output from TLC block which comes out of decoder to enable the segment to display the timing of the circuit. Here the CA- CG are the cathodes input to the seven segment and AN signal is anode input to the seven segment.
+
+V.MAIN COMPONENTS
+
+4.1 FPGA:
+
+Field Programmable Gate Arrays (FPGAs) are the semiconductor devices that are made up of table of the configurable logic blocks (CLBs) which are banded together through the programmable interconnects. The FPGA contains an array of programmable logic blocks, and the re-configurable interconnections that will allow the blocks and logic gates to get them connected through wire altogether, to accomplish the complex combinational functions, or only some simple logic gates functions. In most of the FPGAs, the logic blocks can also include memory element, which perhaps be simple flip-flops or can be additional complete blocks of memory. FPGAs are reprogrammable devices that can be reprogrammed to a suitable and needed application or functionality prerequisite after fabrication.
+systems. The primary use of the FPGA's is to avoid the high expenses for the custom VLSI projects such as ASIC for a small quantity. A design flow is given in the following block diagram(FPGA FLOW)
+
+![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/1cda653f-5d4b-426a-b9d9-e64f8f04f33c)
+
+
+Field Programmable Gate Arrays (FPGAs) are widely used in quick prototyping and verification of theoretical design and as well as useful in electronic
+
+
