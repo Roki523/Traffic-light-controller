@@ -76,6 +76,8 @@ III.DESIGN OF TRAFFIC LIGHT CONTROL
 
 Our objective to design traffic control system, so we
 have taken a four-way simple intersection as shown in (MECHANISM)
+![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/a878e5e7-5ed6-4b44-aa27-9db69761357c)
+
 
 ![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/fb71ba54-b770-4825-bae5-02fc84462b45)
       
@@ -98,7 +100,7 @@ rush lane
 
 3.2 FUNCTIONAL BLOCK:
 
-Here we have proposed the system for the abovedescribed problem as shown in figure2. In this figure
+Here we have proposed the system for the abovedescribed problem as shown In this figure
 we have shown the Logic Block diagram(BLOCK DIAGARM OF SYSTEM)
 
 ![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/b7dd1a4b-99fa-43ea-8ca2-4b68f9986a56)
@@ -202,7 +204,7 @@ project. We design schematic on Xilinx tool.(LOGIC OF TIMING BLOCK)
 
 ![IMG_20230926_233238](https://github.com/Roki523/Traffic-light-controller/assets/109354329/c2bc9b01-4215-47c9-94b8-e79341d520f2)
 
-Here in the figure.2 shows basic working of each lane traffic lights. It shows the switching mechanism of lights during the rush time as it for low density time the green will automatically changes to 8sec provide the less time for lane as it not has any huge traffic. As it has specified for each lane and timing between each lane is set very precisely and accurately.
+Here in the figure shows basic working of each lane traffic lights. It shows the switching mechanism of lights during the rush time as it for low density time the green will automatically changes to 8sec provide the less time for lane as it not has any huge traffic. As it has specified for each lane and timing between each lane is set very precisely and accurately.
 
 3.4 STATE TRANSITION TABLE
 
@@ -241,4 +243,22 @@ systems. The primary use of the FPGA's is to avoid the high expenses for the cus
 
 Field Programmable Gate Arrays (FPGAs) are widely used in quick prototyping and verification of theoretical design and as well as useful in electronic
 
+
+4.2 VERILOG (VHDL):
+
+TLC is sequential circuit and coding method we choose is FSM (Finite State Machine). As specific we decide different states for the machine and provide respecting timing in between states to get the desired output.(CODE LOGIC)
+
+![IMG_20231001_010903](https://github.com/Roki523/Traffic-light-controller/assets/109354329/ce84ed7e-596e-45da-bb57-8f103389a09d)
+# FSM
+
+
+![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/7ce97ae1-9557-4d92-9cb7-7306c8552a2c)
+# TLC FLOW CHART
+
+
+![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/1aa91be0-fc38-4db9-ba7c-9fe882d79c02)
+
+# TRAFFIC PASS TIME WITH SENSORS ACTIVATION
+
+![image](https://github.com/Roki523/Traffic-light-controller/assets/109354329/ab8eef39-8325-4074-b87c-dde4184b2655)
 
