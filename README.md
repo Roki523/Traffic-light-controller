@@ -264,6 +264,6 @@ TLC is sequential circuit and coding method we choose is FSM (Finite State Machi
 
 # WAVE
 
-![IMG_20231001_010903](https://github.com/Roki523/Traffic-light-controller/assets/109354329/83bb271b-8d03-4730-bf75-c52db7176909)
+![IMG_20231001_014630](https://github.com/Roki523/Traffic-light-controller/assets/109354329/dee6dc3d-1ff8-44b0-9d3f-1fcb3610fd5d)
 
 
